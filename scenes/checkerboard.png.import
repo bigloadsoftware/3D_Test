@@ -2,21 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvsm5b45rbose"
-path="res://.godot/imported/screwdriver_0.png-8d44c9306f1e49e083b3a6341b05d078.ctex"
+uid="uid://l3kvsbxcbhy2"
+path.s3tc="res://.godot/imported/checkerboard.png-85f0358bee6e9d52dc3b144188042aa8.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
-generator_parameters={}
 
 [deps]
 
-source_file="res://icons/objects/tools/screwdriver/screwdriver_0.png"
-dest_files=["res://.godot/imported/screwdriver_0.png-8d44c9306f1e49e083b3a6341b05d078.ctex"]
+source_file="res://scenes/checkerboard.png"
+dest_files=["res://.godot/imported/checkerboard.png-85f0358bee6e9d52dc3b144188042aa8.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
