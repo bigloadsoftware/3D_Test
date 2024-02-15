@@ -11,9 +11,9 @@ func _process(delta):
 	if Input.is_action_pressed("move_a"):
 		velocity.x = -1
 	if Input.is_action_pressed("move_w"):
-		velocity.y = -1
+		velocity.z = -1
 	if Input.is_action_pressed("move_s"):
-		velocity.y = 1
+		velocity.z = 1
 
 
 	position += velocity * delta
