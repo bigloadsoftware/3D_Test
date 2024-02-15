@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cb380d03fxtpe"]
 
-[ext_resource type="PackedScene" uid="uid://ca2ltqfwwhq2w" path="res://scenes/screwdriver.tscn" id="1_nkr34"]
 [ext_resource type="Texture2D" uid="uid://l3kvsbxcbhy2" path="res://scenes/checkerboard.png" id="2_7f3u0"]
+[ext_resource type="PackedScene" uid="uid://24dxa2136cem" path="res://scenes/character_body_3d.tscn" id="2_lon2f"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rkl1y"]
 albedo_texture = ExtResource("2_7f3u0")
@@ -13,8 +13,6 @@ size = Vector3(10.917, 1, 8.88965)
 
 [node name="GridMap" type="GridMap" parent="."]
 
-[node name="screwdriver" parent="." instance=ExtResource("1_nkr34")]
-
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.186451, -1.58409, -0.724864)
 material_override = SubResource("StandardMaterial3D_rkl1y")
@@ -24,3 +22,5 @@ size = Vector3(10.467, 1, 8.23041)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0678711, 0, -0.195801)
 shape = SubResource("BoxShape3D_rf4xx")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_lon2f")]
