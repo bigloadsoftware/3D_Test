@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://24dxa2136cem"]
+
+[ext_resource type="Script" path="res://scripts/character_body_3d.gd" id="1_ccs13"]
+[ext_resource type="PackedScene" uid="uid://b1vhk7tq5444k" path="res://icons/mobs/radio_boy/Radio_Boy.gltf" id="1_q0k0h"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8plpm"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_ccs13")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_8plpm")
+
+[node name="blockbench_export" parent="." instance=ExtResource("1_q0k0h")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 6, 5)
+
+[editable path="blockbench_export"]
